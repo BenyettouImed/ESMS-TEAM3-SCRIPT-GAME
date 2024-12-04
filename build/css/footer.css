@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Game Of Squids', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    flex-grow: 1;
+}
+
+.image-container img {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #A4125B;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+.contact-icons{
+   font-size: 36px;
+   letter-spacing: 2px;
+}
+.contact_class{
+    margin-top: 0px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #888;
+}
