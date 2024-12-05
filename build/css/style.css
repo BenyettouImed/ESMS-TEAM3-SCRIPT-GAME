@@ -12,9 +12,10 @@
   list-style-type: none;
 }
 
-.faq-section {
+.faq-section,
+.agenda-section {
   width: 100%;
-  background-color: black;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +23,8 @@
   padding: 2rem;
 }
 
-.faq-title {
+.faq-title,
+.agenda-title {
   position: relative;
   font-family: 'SquidFont';
   font-size: 4rem;
@@ -30,12 +32,90 @@
   text-align: center;
   color: #ff0080;
 }
-.faq-title::before {
+.faq-title::before,
+.agenda-title::before {
   content: 'FAQ';
   position: absolute;
   bottom: 5px;
   right: 5px;
   color: white;
+}
+.agenda-title::before {
+  content: 'Agenda';
+  bottom: 1px;
+  right: 1px;
+}
+
+.days-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.days-container .day {
+  width: 20%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.days-container .day.second {
+  justify-content: flex-end;
+}
+.days-container .day .day-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-solid.fa-play {
+  color: white;
+  size: 50px;
+}
+.days-container .day .day-images .right,
+.days-container .day .day-images .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.days-container .day .day-header {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background-color: #f2007a;
+}
+.days-container .day .day-header h3 {
+  color: white;
+  font-family: 'SquidFont';
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+.schedule {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5px;
+  color: white;
+}
+
+.time {
+  color: #ffa500;
+  min-width: 50px;
+  font-weight: bold;
 }
 .accordion {
   width: 90%;
@@ -104,11 +184,33 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (max-width: 1080px) {
+  .days-container .day {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .days-container .day {
+    width: 29%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .accordion {
     width: 95%;
   }
   .faq-section {
     padding: 1rem;
+  }
+  .days-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .days-container .day {
+    width: 100%;
+    height: auto;
+  }
+  .days-container .day.second {
+    flex-direction: column-reverse;
   }
 }
