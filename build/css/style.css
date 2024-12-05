@@ -11,6 +11,77 @@
   text-decoration: none;
   list-style-type: none;
 }
+.navbar {
+  position : sticky;
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:  center !important;
+  padding-left: 96px;
+  padding-right: 96px;
+  background: rgba(255, 143, 199, 0.2);
+  
+  height: 68px;
+  width: 1234px;
+  border-radius: 16px;
+border: 1px solid  #ca056881;
+margin-left: 190px;
+width: 80%;
+margin-top: 25px;
+
+}
+.ti {
+  background-image: url(../assets/icons/Desktop\ \(1\).png);
+  padding-top: 7px;
+  position: relative;
+}
+.logo {
+  width: 70px;
+  height: 85px;
+  object-fit: cover;
+
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  width: 90px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease ;
+  background-color: 0.3s ease;
+  font-family: Roboto;
+}
+.navbar a:hover {
+  background-color: #721041;
+  
+border-radius: 2px;
+position: relative;
+ 
+}
+.register:hover {
+  background-color: #680734; 
+  transform: scale(1.1);
+
+}
+ 
+.di {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.register {
+  width: 183px;
+  height: 39px;
+  background-color: rgb(133, 13, 73);
+  border-radius: 5px;
+  border: 1px solid  rgba(100, 6, 59, 0.5);
+}
+
 
 .faq-section {
   width: 100%;
