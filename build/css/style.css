@@ -12,6 +12,209 @@
   list-style-type: none;
 }
 
+body {
+  
+  background-image:url('../assets/icons/Desktop\ \(1\).png');
+  
+}
+.about{
+  font-family: 'Arial', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+h1 {
+  font-family: 'GameOfSquids', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 0px #ff0099; 
+}
+.container {
+  display: flex;
+  position: relative;
+  top: 60px;
+  height: fit-content;
+  width: 25vw;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cse-club {
+  position: relative;
+  width: 30vw;
+  top: 0vh; 
+  left: 100px;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cse-club h2 {
+  font-family: 'GameOfSquids', sans-serif;
+  font-size: 30px;
+  
+  display: inline-block;
+  text-shadow: 2px 2px 0px #FF9A15;
+}
+.cse-club .section-text {
+  font-size: 14px;
+}
+.script-game {
+  position: absolute;
+  width: 100%;
+  top: 30vh;
+  right: 0;
+  left: 65vw;
+  text-align: center; 
+      display: flex ;
+      flex-direction: column;
+      height: 30vh;
+      align-items: center;
+      justify-content: space-evenly;
+      gap : 20px 
+}
+
+.script-game h2 {
+  font-family: 'GameOfSquids', sans-serif;
+  font-size: 30px;
+  height: fit-content;
+  padding:0 ;
+  text-shadow: 2px 2px 0px #FF9A15
+
+}
+
+.script-game .section-text1 {
+  font-size: 14px;
+}
+.btn {
+  border-radius: 15px;
+  background: #FF9A15;
+  font-family: 'GameOfSquids', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff;
+  padding: 12px 27px 12px 28px;
+}
+@font-face {
+  font-family: 'GameOfSquids';
+  src: url('../assets/fonts/GameOfSquids-1GMVL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cercle-vert {
+  width: 250px;
+  top: 22.7vh;
+  height: 250px;
+  border: 35px solid #2E6F47;
+  background-color:transparent;
+  border-radius: 50%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+
+.cercle-rose {
+  width: 200px;
+  height: 200px;
+  border: 35px solid #F2007A;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.bande-verticale-v {
+  right: 0;  
+  top: 250.5px;    
+  width: 700px;
+  height: 30px; 
+  background-color: #2E6F47; 
+  display: flex; 
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.bande-verticale-r {
+  position: fixed;  
+  right: 700px;  
+  top: 69.9vh;  
+  width: 700px;
+  height: 30px; 
+  background-color: #F2007A; 
+  z-index: 1;
+  display: flex; 
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.img1 {
+  position: absolute;  
+  top: 254px;           
+  left: 50%;           
+  transform: translateX(-50%);
+  width: 170px;      
+  height: auto; 
+  z-index: 2;       
+}
+.img2 {
+  width: 50px;       
+  height: auto; 
+  z-index: -1; 
+  transform: translateY(30px);      
+}
+.img3 { 
+  width: 25px;      
+  height: auto; 
+  position: relative;
+  top:8vh;
+  left: 27.5vw;
+  z-index: 2;       
+}
+.img4 {
+            
+ width: 50px;        
+  height: auto; 
+  z-index: 2;  
+}
+.cse-club{
+   display: flex;
+  flex-direction: column;
+  height: 25vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.titleCse{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin: 0;
+  height: 25%;
+  padding: 0;
+}
+.section-text1{
+  margin-top: -15px;
+}
+
 .faq-section {
   width: 100%;
   background-color: black;
@@ -20,6 +223,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 2rem;
+  height: 100vh;
 }
 
 .faq-title {
@@ -29,6 +233,7 @@
   font-weight: bold;
   text-align: center;
   color: #ff0080;
+  width: 100%;
 }
 .faq-title::before {
   content: 'FAQ';
@@ -36,6 +241,7 @@
   bottom: 5px;
   right: 5px;
   color: white;
+  width: 100%;
 }
 .accordion {
   width: 90%;
