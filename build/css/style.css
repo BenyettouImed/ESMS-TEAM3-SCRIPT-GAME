@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
   font-family: 'SquidFont';
   src: url('../assets/fonts/GameOfSquids-1GMVL.ttf') format('truetype');
@@ -12,212 +12,95 @@
   list-style-type: none;
 }
 
-body {
-  
-  background-image:url('../assets/icons/Desktop\ \(1\).png');
-  
-}
-.about{
-  font-family: 'Arial', sans-serif;
-  color: white;
+
+  width: 100%;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
+  gap: 10px;
+  padding-inline: 10%;
+  padding-block: 20%;
+}
+.hero-section img {
+  width: 550px;
+  position: absolute;
+  top: 0;
+  right: -270px;
+}
+.hero-section h1 {
+  position: relative;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 60px;
+}
+.hero-section h1::before {
+  font-family: 'SquidFont';
+  content: 'Script Game';
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
+}
+.hero-section h2 {
+  font-size: 55px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.hero-section p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 77%;
+}
+.hero-section button {
+  width: 150px;
+  padding-block: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  background: #a4125b;
+  border: 1px solid #f2007a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.teaser-section {
   height: 100vh;
-}
-h1 {
-  font-family: 'GameOfSquids', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  position: relative;
-  top: 20px; 
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  text-transform: uppercase; 
-  letter-spacing: 2px; 
-  text-shadow: 2px 2px 0px #ff0099; 
-}
-.container {
+  width: 100%;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
   display: flex;
-  position: relative;
-  top: 60px;
-  height: fit-content;
-  width: 25vw;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.teaser-section .video-and-image {
+  width: 80%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
 }
-.cse-club {
+.teaser-section h2 {
   position: relative;
-  width: 30vw;
-  top: 0vh; 
-  left: 100px;  
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 4rem;
 }
 
-.cse-club h2 {
-  font-family: 'GameOfSquids', sans-serif;
-  font-size: 30px;
-  
-  display: inline-block;
-  text-shadow: 2px 2px 0px #FF9A15;
-}
-.cse-club .section-text {
-  font-size: 14px;
-}
-.script-game {
+.teaser-section h2::before {
+  font-family: 'SquidFont';
+  content: 'Teaser';
   position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
+}
+.faq-section,
+.agenda-section {
   width: 100%;
-  top: 30vh;
-  right: 0;
-  left: 65vw;
-  text-align: center; 
-      display: flex ;
-      flex-direction: column;
-      height: 30vh;
-      align-items: center;
-      justify-content: space-evenly;
-      gap : 20px 
-}
-
-.script-game h2 {
-  font-family: 'GameOfSquids', sans-serif;
-  font-size: 30px;
-  height: fit-content;
-  padding:0 ;
-  text-shadow: 2px 2px 0px #FF9A15
-
-}
-
-.script-game .section-text1 {
-  font-size: 14px;
-}
-.btn {
-  border-radius: 15px;
-  background: #FF9A15;
-  font-family: 'GameOfSquids', sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #fff;
-  padding: 12px 27px 12px 28px;
-}
-@font-face {
-  font-family: 'GameOfSquids';
-  src: url('../assets/fonts/GameOfSquids-1GMVL.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-.circles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.cercle-vert {
-  width: 250px;
-  top: 22.7vh;
-  height: 250px;
-  border: 35px solid #2E6F47;
-  background-color:transparent;
-  border-radius: 50%;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
-
-.cercle-rose {
-  width: 200px;
-  height: 200px;
-  border: 35px solid #F2007A;
-  background-color: transparent;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-.bande-verticale-v {
-  right: 0;  
-  top: 250.5px;    
-  width: 700px;
-  height: 30px; 
-  background-color: #2E6F47; 
-  display: flex; 
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-}
-.bande-verticale-r {
-  position: fixed;  
-  right: 700px;  
-  top: 69.9vh;  
-  width: 700px;
-  height: 30px; 
-  background-color: #F2007A; 
-  z-index: 1;
-  display: flex; 
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-}
-.img1 {
-  position: absolute;  
-  top: 254px;           
-  left: 50%;           
-  transform: translateX(-50%);
-  width: 170px;      
-  height: auto; 
-  z-index: 2;       
-}
-.img2 {
-  width: 50px;       
-  height: auto; 
-  z-index: -1; 
-  transform: translateY(30px);      
-}
-.img3 { 
-  width: 25px;      
-  height: auto; 
-  position: relative;
-  top:8vh;
-  left: 27.5vw;
-  z-index: 2;       
-}
-.img4 {
-            
- width: 50px;        
-  height: auto; 
-  z-index: 2;  
-}
-.cse-club{
-   display: flex;
-  flex-direction: column;
-  height: 25vh;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.titleCse{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
-  margin: 0;
-  height: 25%;
-  padding: 0;
-}
-.section-text1{
-  margin-top: -15px;
-}
-
-.faq-section {
-  width: 100%;
-  background-color: black;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,8 +108,84 @@ h1 {
   padding: 2rem;
   height: 100vh;
 }
+.sponsor-section {
+  width: 100%;
+  padding-block: 50px;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+.sponsor-section h2 {
+  position: relative;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 4rem;
+}
+.sponsor-section h2::before {
+  font-family: 'SquidFont';
+  content: 'Sponsors';
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
+}
 
-.faq-title {
+.sponsors-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsor-card {
+  width: 280px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 20px;
+  border: 1px solid #df0327;
+  border-radius: 16px;
+}
+.sponsor-card.yassir {
+  border-color: #6316db;
+}
+.sponsor-card img {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+}
+.sponsor-card.ooredoo:hover {
+  cursor: pointer;
+  background-color: #df032733;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card.djezzy:hover {
+  cursor: pointer;
+  background-color: #df032733;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card.yassir:hover {
+  cursor: pointer;
+  background-color: #6316db33;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card h3 {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.faq-title,
+.agenda-title {
   position: relative;
   font-family: 'SquidFont';
   font-size: 4rem;
@@ -242,6 +201,87 @@ h1 {
   right: 5px;
   color: white;
   width: 100%;
+}
+.agenda-title::before {
+  position: absolute;
+  font-family: 'SquidFont';
+  content: 'Agenda';
+  color: white;
+  bottom: 5px;
+  left: 0px;
+}
+
+.days-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.days-container .day {
+  width: 20%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.days-container .day.second {
+  justify-content: flex-end;
+}
+.days-container .day .day-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-solid.fa-play {
+  color: white;
+  size: 50px;
+}
+.days-container .day .day-images .right,
+.days-container .day .day-images .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.days-container .day .day-header {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background-color: #f2007a;
+}
+.days-container .day .day-header h3 {
+  color: white;
+  font-family: 'SquidFont';
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+.schedule {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.time {
+  color: #ffa500;
+  min-width: 50px;
+  font-weight: bold;
 }
 .accordion {
   width: 90%;
@@ -308,6 +348,18 @@ h1 {
 .accordion-content p {
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+  .days-container .day {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .days-container .day {
+    width: 29%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -316,5 +368,16 @@ h1 {
   }
   .faq-section {
     padding: 1rem;
+  }
+  .days-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .days-container .day {
+    width: 100%;
+    height: auto;
+  }
+  .days-container .day.second {
+    flex-direction: column-reverse;
   }
 }
