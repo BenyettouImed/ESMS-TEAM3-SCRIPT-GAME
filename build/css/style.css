@@ -11,6 +11,7 @@
   text-decoration: none;
   list-style-type: none;
 }
+
 .hero-section {
   height: 100vh;
   position: relative;
@@ -108,6 +109,81 @@
   justify-content: center;
   flex-direction: column;
   padding: 2rem;
+}
+.sponsor-section {
+  width: 100%;
+  padding-block: 50px;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+.sponsor-section h2 {
+  position: relative;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 4rem;
+}
+.sponsor-section h2::before {
+  font-family: 'SquidFont';
+  content: 'Sponsors';
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
+}
+
+.sponsors-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsor-card {
+  width: 280px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 20px;
+  border: 1px solid #df0327;
+  border-radius: 16px;
+}
+.sponsor-card.yassir {
+  border-color: #6316db;
+}
+.sponsor-card img {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+}
+.sponsor-card.ooredoo:hover {
+  cursor: pointer;
+  background-color: #df032733;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card.djezzy:hover {
+  cursor: pointer;
+  background-color: #df032733;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card.yassir:hover {
+  cursor: pointer;
+  background-color: #6316db33;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card h3 {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .faq-title,
