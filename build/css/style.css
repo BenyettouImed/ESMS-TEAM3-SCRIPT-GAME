@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
   font-family: 'SquidFont';
   src: url('../assets/fonts/GameOfSquids-1GMVL.ttf') format('truetype');
@@ -83,23 +83,187 @@ position: relative;
 }
 
 
-.faq-section {
+
   width: 100%;
-  background-color: black;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: 10%;
+  padding-block: 20%;
+}
+.hero-section img {
+  width: 550px;
+  position: absolute;
+  top: 0;
+  right: -270px;
+}
+.hero-section h1 {
+  position: relative;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 60px;
+}
+.hero-section h1::before {
+  font-family: 'SquidFont';
+  content: 'Script Game';
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
+}
+.hero-section h2 {
+  font-size: 55px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.hero-section p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 77%;
+}
+.hero-section button {
+  width: 150px;
+  padding-block: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  background: #a4125b;
+  border: 1px solid #f2007a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.teaser-section {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.teaser-section .video-and-image {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teaser-section h2 {
+  position: relative;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 4rem;
+}
+
+.teaser-section h2::before {
+  font-family: 'SquidFont';
+  content: 'Teaser';
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
+}
+.faq-section,
+.agenda-section {
+  width: 100%;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 2rem;
+  height: 100vh;
+}
+.sponsor-section {
+  width: 100%;
+  padding-block: 50px;
+  background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+.sponsor-section h2 {
+  position: relative;
+  font-family: 'SquidFont';
+  color: #f2007a;
+  font-size: 4rem;
+}
+.sponsor-section h2::before {
+  font-family: 'SquidFont';
+  content: 'Sponsors';
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  color: white;
 }
 
-.faq-title {
+.sponsors-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsor-card {
+  width: 280px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 20px;
+  border: 1px solid #df0327;
+  border-radius: 16px;
+}
+.sponsor-card.yassir {
+  border-color: #6316db;
+}
+.sponsor-card img {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+}
+.sponsor-card.ooredoo:hover {
+  cursor: pointer;
+  background-color: #df032733;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card.djezzy:hover {
+  cursor: pointer;
+  background-color: #df032733;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card.yassir:hover {
+  cursor: pointer;
+  background-color: #6316db33;
+  transition: 1.5s cubic-bezier;
+}
+.sponsor-card h3 {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.faq-title,
+.agenda-title {
   position: relative;
   font-family: 'SquidFont';
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
   color: #ff0080;
+  width: 100%;
 }
 .faq-title::before {
   content: 'FAQ';
@@ -107,6 +271,88 @@ position: relative;
   bottom: 5px;
   right: 5px;
   color: white;
+  width: 100%;
+}
+.agenda-title::before {
+  position: absolute;
+  font-family: 'SquidFont';
+  content: 'Agenda';
+  color: white;
+  bottom: 5px;
+  left: 0px;
+}
+
+.days-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.days-container .day {
+  width: 20%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.days-container .day.second {
+  justify-content: flex-end;
+}
+.days-container .day .day-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-solid.fa-play {
+  color: white;
+  size: 50px;
+}
+.days-container .day .day-images .right,
+.days-container .day .day-images .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.days-container .day .day-header {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background-color: #f2007a;
+}
+.days-container .day .day-header h3 {
+  color: white;
+  font-family: 'SquidFont';
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+.schedule {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.time {
+  color: #ffa500;
+  min-width: 50px;
+  font-weight: bold;
 }
 .accordion {
   width: 90%;
@@ -173,6 +419,18 @@ position: relative;
 .accordion-content p {
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+  .days-container .day {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .days-container .day {
+    width: 29%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -181,5 +439,16 @@ position: relative;
   }
   .faq-section {
     padding: 1rem;
+  }
+  .days-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .days-container .day {
+    width: 100%;
+    height: auto;
+  }
+  .days-container .day.second {
+    flex-direction: column-reverse;
   }
 }
