@@ -275,6 +275,7 @@
   justify-content: flex-start;
   gap: 0.5px;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .time {
