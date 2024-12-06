@@ -12,10 +12,7 @@
   list-style-type: none;
 }
 
-.hero-section {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+
   width: 100%;
   background: radial-gradient(circle at center, #3a1f2b 0%, #1a0f14 100%);
   display: flex;
@@ -109,6 +106,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 2rem;
+  height: 100vh;
 }
 .sponsor-section {
   width: 100%;
@@ -194,6 +192,7 @@
   font-weight: bold;
   text-align: center;
   color: #ff0080;
+  width: 100%;
 }
 .faq-title::before {
   content: 'FAQ';
@@ -201,6 +200,7 @@
   bottom: 5px;
   right: 5px;
   color: white;
+  width: 100%;
 }
 .agenda-title::before {
   position: absolute;
